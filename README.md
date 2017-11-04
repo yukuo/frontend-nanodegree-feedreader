@@ -4,7 +4,7 @@
 * All test cases are included in /jasmine/spec/feedreader.js
 
 
-......
+---
 
 This information below is from the project specification.
 
