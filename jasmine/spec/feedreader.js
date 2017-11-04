@@ -32,13 +32,10 @@ $(function() {
          * and that the URL is not empty.
          */
          it('URL of each feed is not empty', function() {
-           if (allFeeds.length !== 0) {
-             allFeeds.forEach(function(feed) {
-               expect(feed.url).toBeDefined();
-             });
-           } else {
-             alert("No feed is defined inside allFeeds.");
-           }
+           allFeeds.forEach(function(feed) {
+             expect(feed.url).toBeDefined();
+             expect(feed.url.length).not.toBe(0);
+           });
          });
 
 
@@ -47,13 +44,10 @@ $(function() {
          * and that the name is not empty.
          */
          it('name of each feed is not empty', function() {
-           if (allFeeds.length !== 0) {
-             allFeeds.forEach(function(feed) {
-               expect(feed.name).toBeDefined();
-             });
-           } else {
-             alert("No feed is defined inside allFeeds.");
-           }
+           allFeeds.forEach(function(feed) {
+             expect(feed.name).toBeDefined();
+             expect(feed.name.length).not.toBe(0);
+           });
          });
     });
 
